@@ -24,7 +24,7 @@
     grid-column: full-start/full-end;
     margin: 0 2vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
     grid-template-rows: 10vh;
     grid-gap: 3rem;
 

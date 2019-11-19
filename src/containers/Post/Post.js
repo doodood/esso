@@ -22,38 +22,44 @@ class Post extends Component {
           <section className="post-section">
             <div className="post-section__title">
               <h2>The Post</h2>
+              <div className="post-section__links">
               <Link to="/">Home</Link>
+              <Link to="/messages">Articles</Link>
+              <Link to="/about">About</Link>
+              </div>  
             </div>
             <div className="post-section__item">
               <img src={riverBirdge} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
-                quisquam fugiat qui modi, deserunt temporibus repellat, dolorum
-                voluptatum itaque illum soluta!
-              </p>
+              <div className="post-section__item-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
+                  quisquam fugiat qui modi, deserunt temporibus repellat,
+                  dolorum voluptatum itaque illum soluta!
+                </p>
+              </div>
             </div>
             <div className="post-section__item--reverse">
               <img src={riverBirdge} alt="" />
               <div className="post-section__item-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
-                quisquam fugiat qui modi, deserunt temporibus repellat, dolorum
-                voluptatum itaque illum soluta!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
-                quisquam fugiat qui modi, deserunt temporibus repellat, dolorum
-                voluptatum itaque illum soluta!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
-                quisquam fugiat qui modi, deserunt temporibus repellat, dolorum
-                voluptatum itaque illum soluta!
-              </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
+                  quisquam fugiat qui modi, deserunt temporibus repellat,
+                  dolorum voluptatum itaque illum soluta!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
+                  quisquam fugiat qui modi, deserunt temporibus repellat,
+                  dolorum voluptatum itaque illum soluta!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  ipsa alias et cumque, hic dolores quibusdam velit perspiciatis
+                  quisquam fugiat qui modi, deserunt temporibus repellat,
+                  dolorum voluptatum itaque illum soluta!
+                </p>
               </div>
             </div>
           </section>

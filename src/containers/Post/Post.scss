@@ -16,8 +16,18 @@
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-gap: 4rem;
 
+    &__links{
+      margin-top: 2rem;
+      display: flex;
+      align-content: stretch;
+      justify-content: space-evenly;
+    }
     &__title {
       grid-column: 1/-1;
+      text-align:center;
+      h2 {
+        font-size: 2rem;
+      }
     }
     &__item {
       display: grid;
@@ -38,6 +48,7 @@
       grid-column: 1/-1;
       grid-template-columns: repeat(2, minmax(20rem,1fr));
       grid-gap: 2rem;
+      //background-color: #eee;
       img {
         width: 100%;
         grid-column: 2/-1;
@@ -60,5 +71,11 @@
       background-size: cover;
       z-index: 1;
     }
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: purple;
   }
 }
