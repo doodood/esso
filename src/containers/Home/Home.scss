@@ -1,0 +1,45 @@
+.home {
+  display: grid;
+  grid-template-rows: 95vh repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  .articles-section {
+    grid-column: 1 / -1;
+    display: grid;
+  }
+
+  .features-section {
+    margin: 5rem 0;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    //grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .persons-section {
+    grid-column: full-start/full-end;
+    margin: 0 2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: 10vh;
+    grid-gap: 3rem;
+
+    &__title {
+      grid-column: 1 /-1;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  h3 {
+    grid-column: col-start 1 / col-end 6;
+  }
+}
